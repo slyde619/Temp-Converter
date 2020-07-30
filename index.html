@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    #results{
+      display: none;
+    }
+
+  </style>
+</head>
+<body class="bg-warning">
+  <div class="container my-3">
+      <div class="row">
+        <div class="showMsg">
+          <div class="card bg-secondary col-md-6 col-sm-12 mx-auto">
+            <div class="card-body">
+              <h4 class="text-center text-white">Temperature Converter (C - F)</h4>
+
+              <form id="converter">
+                <div class="form-group">
+                  <div class="input-group my-2">
+                      <span class="input-group-text" id="addon1">Celcius</span>
+                      <input type="number" id="celciusValue" class="form-control" placeholder="Enter Value" >
+                  </div>
+                </div>
+                <!-- === calculate -->
+                <div class="form-group">
+                  <input type="submit" value="Calculate" class="btn btn-block btn-light shadow">
+                </div>
+              </form>
+              
+              <!-- ==== Result ==== -->
+              <div id="results">
+                <h5 class="display-6 text-center mt-2 text-white">Results</h5>
+                <div class="form-group">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Farenheit</span>
+                    </div>
+                    <input type="number" id="showFarenheit" class="form-control" disabled>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            
+          </div>
+    </div>
+    </div>
+  </div>
+  
+
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
