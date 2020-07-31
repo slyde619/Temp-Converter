@@ -4,43 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Temperature Coverter || Home</title>
+  <!-- ==== Bootstrap CDN ==== -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
   <style>
     * {
       box-sizing: border-box;
     }
-
     #results{
       display: none;
     }
-
   </style>
 </head>
 <body class="bg-warning">
-  <div class="container my-3">
+  <div class="container my-5">
       <div class="row">
         <div class="showMsg">
-          <div class="card bg-secondary col-md-6 col-sm-12 mx-auto">
-            <div class="card-body">
+          <div class="card bg-secondary shadow-lg col-md-6 col-sm-12 mx-auto">
+            <div class="card-body my-2">
               <h4 class="text-center text-white">Temperature Converter (C - F)</h4>
-
+              <!-- ==== Form ==== -->
               <form id="converter">
                 <div class="form-group">
                   <div class="input-group my-2">
-                      <span class="input-group-text" id="addon1">Celcius</span>
-                      <input type="number" id="celciusValue" class="form-control" placeholder="Enter Value" >
+                      <span class="input-group-text lg-shadow" id="addon1">Celsius</span>
+                      <input type="number" id="celsiusValue" class="form-control" placeholder="Enter Value">
                   </div>
                 </div>
-                <!-- === calculate -->
+                <!-- === calculate Btn ==== -->
                 <div class="form-group">
                   <input type="submit" value="Calculate" class="btn btn-block btn-light shadow">
                 </div>
               </form>
-              
+              <!-- ==== Form End ==== -->
               <!-- ==== Result ==== -->
               <div id="results">
-                <h5 class="display-6 text-center mt-2 text-white">Results</h5>
+                <h5 class="display-6 text-center mt-3 text-white">Results</h5>
                 <div class="form-group">
                   <div class="input-group">
                     <div class="input-group-prepend">
@@ -49,10 +48,13 @@
                     <input type="number" id="showFarenheit" class="form-control" disabled>
                   </div>
                 </div>
+                <!-- ==== Clear Btn ==== -->
+                <div class="form-group my-2">
+                  <button class="btn btn-block btn-light shadow clearBtn">Clear</button>
+                </div>
+                <!-- ==== End clear Btn ==== -->
               </div>
-              
             </div>
-            
           </div>
     </div>
     </div>
